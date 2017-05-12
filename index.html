@@ -10,35 +10,36 @@
   </head>
   <body>
     <div class = "container">
-      <form id ="size">
-        <div class="col-md-6">
-          <h3>How hungry are you?</h3>
-          <h3>Select the size of pizza you would like.</h3>
-          <div class="form-group">
-            <div class="radio">
-              <label>
-                <input type="radio" name="pizzaSize" value="large">
-                Large
-              </label>
+      <form id ="pizzaOrder">
+        <div id="size">
+          <div class="col-md-6">
+            <h3>How hungry are you?</h3>
+            <h3>Select the size of pizza you would like.</h3>
+            <div class="form-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="large">
+                  Large
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="medium">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="small">
+                  Small
+                </label>
+              </div>
+              <button class="btn btn-primary" type="submit" id="sizeBtn" onclick="showHide('#sauce', '#size')">On to sauces</button>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="pizzaSize" value="medium">
-                Medium
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="pizzaSize" value="small">
-                Small
-              </label>
-            </div>
-          <button class="btn btn-primary" type="submit" id="sizeBtn" onclick="showHide('#sauce', '#size')">On to sauces</button>
+          </div>
         </div>
-      </div>
-      </form>
 
-      <form id ="sauce">
+      <div id ="sauce">
         <div class="col-md-6">
           <h3>What type of sauce would you like?</h3>
           <div class="form-group">
@@ -60,12 +61,12 @@
                 Ranch
               </label>
             </div>
-          <button class="btn btn-primary"  id="sauceBtn" onclick="showHide('#topping', '#sauce')">On to toppings</button>
+            <button class="btn btn-primary"  id="sauceBtn" onclick="showHide('#topping', '#sauce')">On to toppings</button>
+          </div>
         </div>
       </div>
-      </form>
 
-      <form id ="topping">
+      <div id ="topping">
         <div class="col-md-6">
           <h3>What toppings would you like?</h3>
           <div class="form-group">
@@ -87,21 +88,22 @@
                 Olive
               </label>
             </div>
-          <button class="btn btn-primary"  id="topBtn" onclick="showHide('#order', '#topping')">Show me the pizza!</button>
+            <button class="btn btn-primary"  id="topBtn" onclick="showHide('#order', '#topping')">Show me the pizza!</button>
+          </div>
         </div>
       </div>
-      </form>
+
       <div id="order">
         <h3>Here's your order!</h3>
         <h4>You chose:</h4>
         <p>Size:<span id="pizza-size"></span></p>
         <p>Sauce:<span id="pizza-sauce"></span></p>
-        <p>
-          Toppings:
-        </p>
-        <ul id="toppings"></ul>
+        <p>Toppings:</p>
+          <ul id="toppings"></ul>
         <h4>Your price will be:</h4>
       </div>
+
+    </form>
     </div>
   </body>
 </html>
