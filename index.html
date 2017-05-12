@@ -10,65 +10,86 @@
   </head>
   <body>
     <div class = "container">
-      <!-- <div id ="size"> -->
-        <form id ="size">
-          <div class="col-md-6">
-            <h3>How hungry are you? Select the size of pizza you would like.</h3>
-            <div class="form-group">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pizzaSize" value="large">
-                  Large
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pizzaSize" value="medium">
-                  Medium
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="pizzaSize" value="small">
-                  Small
-                </label>
-              </div>
-              <!-- <button  onclick="showHide('#sauce', '#size')" type = "submit">Submit</button> -->
-            <button class="btn btn-primary" type="submit" id="sizeBtn" onclick="showHide('#sauce', '#size')">On to sauces</button>
-          </div>
+      <form id ="size">
+        <div class="col-md-6">
+          <h3>How hungry are you? Select the size of pizza you would like.</h3>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizzaSize" value="large">
+                Large
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizzaSize" value="medium">
+                Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizzaSize" value="small">
+                Small
+              </label>
+            </div>
+          <button class="btn btn-primary" type="submit" id="sizeBtn" onclick="showHide('#sauce', '#size')">On to sauces</button>
         </div>
-        </form>
-      <!-- </div> -->
+      </div>
+      </form>
 
-      <!-- <div id ="sauce"> -->
-        <form id ="sauce">
-          <div class="col-md-6">
-            <h3>What type of sauce would you like?</h3>
-            <div class="form-group">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="sauceType" value="marinara">
-                  Marinara
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="sauceType" value="caesar ">
-                  Caesar
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="sauceType" value="ranch">
-                  Ranch
-                </label>
-              </div>
-            <button class="btn btn-primary"  id="sauceBtn">On to toppings</button>
-          </div>
+      <form id ="sauce">
+        <div class="col-md-6">
+          <h3>What type of sauce would you like?</h3>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauceType" value="marinara">
+                Marinara
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauceType" value="caesar ">
+                Caesar
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauceType" value="ranch">
+                Ranch
+              </label>
+            </div>
+          <button class="btn btn-primary"  id="sauceBtn" onclick="showHide('#topping', '#sauce')">On to toppings</button>
         </div>
-        </form>
-      <!-- </div> -->
+      </div>
+      </form>
 
+      <form id ="topping">
+        <div class="col-md-6">
+          <h3>What toppings would you like?</h3>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="top1" value="cheese">
+                Cheese
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="top2" value="pepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="top3" value="olive">
+                Olive
+              </label>
+            </div>
+          <button class="btn btn-primary"  id="topBtn">Show me the pizza!</button>
+        </div>
+      </div>
+      </form>
 
     </div>
   </body>
