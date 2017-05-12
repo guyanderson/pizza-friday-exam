@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class = "container">
-      <div id ="size">
-        <form>
+      <!-- <div id ="size"> -->
+        <form id ="size">
           <div class="col-md-6">
             <h3>How hungry are you? Select the size of pizza you would like.</h3>
             <div class="form-group">
@@ -33,14 +33,15 @@
                   Small
                 </label>
               </div>
-            <button class="btn btn-primary" onclick="showHide('#sauce', '#size')"id="sizeBtn">On to sauces</button>
+              <!-- <button  onclick="showHide('#sauce', '#size')" type = "submit">Submit</button> -->
+            <button class="btn btn-primary" type="submit" id="sizeBtn" onclick="showHide('#sauce', '#size')">On to sauces</button>
           </div>
         </div>
         </form>
-      </div>
+      <!-- </div> -->
 
-      <div id ="sauce">
-        <form>
+      <!-- <div id ="sauce"> -->
+        <form id ="sauce">
           <div class="col-md-6">
             <h3>What type of sauce would you like?</h3>
             <div class="form-group">
@@ -62,11 +63,11 @@
                   Ranch
                 </label>
               </div>
-            <button class="btn btn-primary" onclick="showHide('#sauce', '#size')"id="sizeBtn">On to toppings</button>
+            <button class="btn btn-primary"  id="sauceBtn">On to toppings</button>
           </div>
         </div>
         </form>
-      </div>
+      <!-- </div> -->
 
 
     </div>
