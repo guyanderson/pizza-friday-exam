@@ -12,7 +12,8 @@
     <div class = "container">
       <form id ="size">
         <div class="col-md-6">
-          <h3>How hungry are you? Select the size of pizza you would like.</h3>
+          <h3>How hungry are you?</h3>
+          <h3>Select the size of pizza you would like.</h3>
           <div class="form-group">
             <div class="radio">
               <label>
@@ -86,11 +87,15 @@
                 Olive
               </label>
             </div>
-          <button class="btn btn-primary"  id="topBtn">Show me the pizza!</button>
+          <button class="btn btn-primary"  id="topBtn" onclick="showHide('#order', '#topping')">Show me the pizza!</button>
         </div>
       </div>
       </form>
-
+      <div id="order">
+        <h3>Here's your order!</h3>
+        <h4>You chose:</h4>
+        <h4>Your price will be:</h4>
+      </div>
     </div>
   </body>
 </html>
