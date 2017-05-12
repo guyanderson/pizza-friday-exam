@@ -10,7 +10,34 @@
   </head>
   <body>
     <div class = "container">
+      <div id = "size">
+        <form>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="pizzaSize">How hungry are you?!</label>
+              <input type="text" class="form-control" id = "pizzaSize">
+            </div>
 
+            <div class="radio">
+              <label>
+                <input type="radio" name="large" value="large" checked>
+                Large
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="medium" value="medium">
+                Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="small" value="small">
+                Small
+              </label>
+            </div>
+            <span class="btn btn-primary" id="sizeBtn">On to sauces</span>
+        </form>
     </div>
   </body>
 </html>
