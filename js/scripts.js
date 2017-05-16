@@ -3,20 +3,22 @@ function Order(inputPizzaSize, inputSauce, toppingArray, price) {
   this.pizzaSauce = inputSauce;
   this.pizzaTopping = toppingArray;
   this.pizzaPrice = price;
-  // console.log(this.pizzaTopping);
 }
 
 function showHide(show, hide){
-   $(show).show();
-   $(hide).hide();
+  $(show).show();
+  $(hide).hide();
 }
 
 Order.prototype.priceCal = function(newOrder){
-  if (newOrder.pizzaSize === "large") {
-    newOrder.pizzaPrice = newOrder.pizzaTopping.length * 2 + 14;
+  if (newOrder.pizzaSize === "Large") {
+    newOrder.pizzaPrice = newOrder.pizzaTopping.length * 2 + 16;
+  } else if (newOrder.pizzaSize === "Medium") {
+    newOrder.pizzaPrice = newOrder.pizzaTopping.length * 1.5 + 14;
+  } else if (newOrder.pizzaSize === "Small") {
+    newOrder.pizzaPrice = newOrder.pizzaTopping.length * 1 + 10;
   }
 }
-
 
 $(document).ready(function(){
 
@@ -34,12 +36,11 @@ $(document).ready(function(){
 
     var newOrder = new Order(inputPizzaSize, inputSauce, toppingArray);
     $("#pizza-size").text(newOrder.pizzaSize);
-    $("#pizza-sauce").text(newOrder.pizzaSauce);
-    // debugger
+    $("#pizza-sauce").text(+""+ newOrder.pizzaSauce);
     for(var i = 0; i < newOrder.pizzaTopping.length; i++) {
       $("#toppings").append("<li>"+newOrder.pizzaTopping[i]+"</li>");
     }
-    newOrder.priceCal(newOrder)
+    newOrder.priceCal(newOrder);
     $("#pizza-price").text("$"+newOrder.pizzaPrice);
 
   });
