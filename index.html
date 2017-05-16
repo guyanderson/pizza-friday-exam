@@ -45,19 +45,19 @@
           <div class="form-group">
             <div class="radio">
               <label>
-                <input type="radio" name="sauceType" value="marinara">
+                <input type="radio" name="sauceType" value="Marinara">
                 Marinara
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="sauceType" value="caesar ">
+                <input type="radio" name="sauceType" value="Caesar ">
                 Caesar
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="sauceType" value="ranch">
+                <input type="radio" name="sauceType" value="Ranch">
                 Ranch
               </label>
             </div>
@@ -70,9 +70,9 @@
         <div class="col-md-6">
           <h3>What toppings would you like?</h3>
           <div class="form-group">
-            <input type="checkbox" name="topping" value="cheese"> Cheese.<br>
-            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni.<br>
-            <input type="checkbox" name="topping" value="olive"> Olive.<br>
+            <input type="checkbox" name="topping" value=" Cheese"> Cheese.<br>
+            <input type="checkbox" name="topping" value=" Pepperoni"> Pepperoni.<br>
+            <input type="checkbox" name="topping" value=" Olive"> Olive.<br>
           </div>
           <button class="btn btn-primary"  id="topBtn" onclick="showHide('#order', '#topping')" type = "submit">Show me the pizza!</button>
         </div>
@@ -86,6 +86,7 @@
         <p>Toppings:</p>
           <ul id="toppings"></ul>
         <h4>Your price will be:</h4>
+        <p><span id="pizza-price"></span></p>
       </div>
 
     </form>
