@@ -10,13 +10,16 @@ _User will be prompted to start the creating their own pizza. The first screen w
 
 
 ## Specs
-| Behavior      | Output           |
-| ------------- |:-------------:|
-| User clicks begin     | User is taken to next screen |
-| User makes pizza size selection from radio button     | User is taken to next screen     |  
-| User makes pizza sauce selection from radio button| User is taken to next screen      |
-| User makes topping selections from checkbox     | User is taken to next screen |
-| Final screen   | Users order is returned for verification and price is displayed |    
+| Behavior      | Input| Output |
+| ------------- :|-------------:|-------------:|
+| Page 1 displays 3 choices for pizza size. Only 1 selection at a time is possible. | Radio button selection: Large |Size:Large(displayed on final screen)|
+| Page 1 displays a button to go to next group of choices "sauces". |  Button click    |  User is taken to Sauce selection|
+| Page 2 displays 3 choices for sauce type. Only 1 selection at a time is possible.|  Radio button selection: Marinara |Sauce:Marinara(displayed on final screen)|
+| Page 2 displays a button to go to next group of choices "Toppings" | Button click| User is taken to topping selection|
+| Page 3 displays all available toppings. Multiple selections are possible. | Checkbox button selection:Olive | Toppings: -list item- Olive(displayed on final screen)  |
+|Page 3 displays a button to return the users order. | Button click | User is taken to the order display view. |
+|Page 4 returns the user choices for size, sauce, and toppings, | (from previous pages)Small/Ranch/Olive|  Size:Small, Sauce:Ranch, Toppings:Olive|
+|Page 4 displays the final price of the pizza based on size of the pizza and number of toppings.|(from previous pages)large/caesar/olive| $18
 
 
 ## Setup/Installation Requirements

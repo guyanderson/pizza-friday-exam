@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     var newOrder = new Order(inputPizzaSize, inputSauce, toppingArray);
     $("#pizza-size").text(newOrder.pizzaSize);
-    $("#pizza-sauce").text(+""+ newOrder.pizzaSauce);
+    $("#pizza-sauce").text(newOrder.pizzaSauce);
     for(var i = 0; i < newOrder.pizzaTopping.length; i++) {
       $("#toppings").append("<li>"+newOrder.pizzaTopping[i]+"</li>");
     }
